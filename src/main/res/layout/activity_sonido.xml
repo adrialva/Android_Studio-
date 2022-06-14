@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Sonido">
+
+
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:background="@color/design_default_color_primary"
+        android:text="Guardar"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/btnHablar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_microfono" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presione para hablar"/>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="?android:attr/listDivider" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esta en pagina de sonido"
+        android:textAlignment="center"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/design_default_color_primary"
+        android:text="CERRAR SESION"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
